@@ -1,0 +1,59 @@
+/* Hidden class*/
+.hidden {
+    visibility:hidden; height:0; width: 0;
+}
+
+h1{
+    color: #9696A0;
+}
+
+p{
+    color: #ffffff;
+}
+
+.model {
+    height: 400px;
+    width: 800px;
+    margin: 20px;
+    display: inline-block;
+    
+}
+
+.info {
+    display: inline-block;
+    width: 700px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.model-div{
+    display: inline-block;
+}
+
+.container{
+    display: inline-block;
+}
+
+/*Button 3D*/
+.b3d-button{
+    margin-left: 33%;
+    margin-top: 55px;
+}
+.b3d-button .inner-wrap{ -webkit-perspective:2000px;  perspective:2000px; position:absolute;  top:0;  right:0;  bottom:0;  left:0;  width:100%;  height:100%;  display:block}
+.b3d-button .front-3d{ position:absolute;  top:0;  right:0;  bottom:0;  left:0;  width:100%;  height:100%;  display:block}
+
+.b3d-button .back-3d{position:relative;  top:0;  right:0;  bottom:0;  left:0;  width:100%;  height:100%;  display:block}
+
+.b3d-button .back-3d{-webkit-transform-origin:50% 50% -2.3em;  transform-origin:50% 50% -2.3em}
+.b3d-button .front-3d{-webkit-transform-origin:50% 50% -2.3em;  transform-origin:50% 50% -2.3em; -webkit-transform:rotateX(-90deg);  transform:rotateX(-90deg)}
+
+.b3d-button:hover .front-3d{-webkit-transform:rotateX(0deg);  transform:rotateX(0deg)}
+.b3d-button:hover .back-3d{-webkit-transform:rotateX(90deg);  transform:rotateX(90deg)}
+
+.b3d-button .back-3d, 
+.b3d-button .front-3d{ transition:-webkit-transform .25s cubic-bezier(.2,.65,.4,1);  transition:transform .25s cubic-bezier(.2,.65,.4,1);  transition:transform .25s cubic-bezier(.2,.65,.4,1),-webkit-transform .25s cubic-bezier(.2,.65,.4,1)}
+
+.b3d-button .back-3d, .b3d-button .front-3d{ -webkit-backface-visibility:hidden;  backface-visibility:hidden}
+
+.b3d-button .back-3d svg, .b3d-button .front-3d svg{ display:block}

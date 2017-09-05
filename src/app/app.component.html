@@ -1,3 +1,69 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+    <div class="info"> 
+        <h1>
+        Gregory Santos Puente.
+        </h1>
+        <p>
+        Civil Engineer :
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        </p>
+
+
+        <!--BUTTON 3D-->
+        <div class="b3d-button" style="width: 209.625px; height: 70px; visibility: visible; position:relative;" data-size="large">
+            <a href="#" style="height: 70px;"><span style="display:none;">Contact Gregory</span>
+            <div class="inner-wrap">
+            <div class="front-3d" style="transform-origin: 50% 50% -35px;">
+                <svg viewbox="0 0 186.625 70" style="width: 209.625px; height: 70px;">
+                
+                <rect width="100%" height="100%" fill="#ffffff"></rect>
+                <text class="mask-text button-text" fill="#363545" text-anchor="middle" font-size="16" transform="matrix(1 0 0 1 104.8125 41.1764705882353)">Contact Gregory</text>
+        
+                </svg>
+            </div>
+            <div class="back-3d" style="transform-origin: 50% 50% -35px;">
+                <svg viewbox="0 0 186.625 70" style="width: 209.625px; height: 70px;">
+                <rect stroke="#ffffff" stroke-width="8" fill="transparent" width="100%" height="100%"></rect>
+                <text fill="#ffffff" text-anchor="middle" font-size="16" transform="matrix(1 0 0 1 104.8125 41.1764705882353)">Contact Gregory</text>
+                </svg>
+            </div>
+            </div>
+            </a>
+        </div>
+        <!--BUTTON 3D-->
+    </div>
+
+    <div class="model-div">
+        <!-- Insert iframe -->
+        <iframe class="model" src="https://sketchfab.com/models/f143121e9ef2427cab4d88e336963b96/embed?autostart=1&autospin=0.5"></iframe>
+        <!-- Initialize the viewer -->
+        <script type="text/javascript">
+        var iframe = document.getElementById( 'api-frame' );
+        var version = '1.0.0';
+        var urlid = '7w7pAfrCfjovwykkEeRFLGw5SXS';
+        var client = new Sketchfab( version, iframe );
+
+        client.init( urlid, {
+            success: function onSuccess( api ){
+                api.start();
+                api.addEventListener( 'viewerready', function() {
+
+                    // API is ready to use
+                    // Insert your code here
+                    console.log( 'Viewer is ready' );
+
+                } );
+            },
+            error: function onError() {
+                console.log( 'Viewer error' );
+            }
+        } );
+        </script>
+    </div>
+    
+  
+ </div>
+
+  
